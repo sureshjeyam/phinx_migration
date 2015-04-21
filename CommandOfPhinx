@@ -1,0 +1,5 @@
+./vendor/bin/phinx create CreateUserTable(CamelCase) 
+./vendor/bin/phinx migrate 
+./vendor/bin/phinx rollback - It will revert only the previous file
+./vendor/bin/phinx rollback -t version number - It will revert till this version
+./vendor/bin/phinx rollback -t 0 - It will revert all the version
